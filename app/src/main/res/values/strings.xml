@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">To Do</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="schedule_planner">Schedule Planner</string>
+    <string name="to_do_list">To-Do List</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="high_priority">High Priority</string>
+    <string name="done">Done</string>
+    <string name="add_a_new_task">Add a New Task</string>
+    <string name="no_tasks_found">No Tasks Found Here</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="the_date_of_the_task">The date of the task</string>
+    <string name="date_picker">Date Picker</string>
+    <string name="time_picker">Time Picker</string>
+    <string name="the_time_of_the_task">The time of the task</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add Task</string>
+    <string name="are_you_sure_you_want_to_delete_this_task">Are you sure you want to delete this task?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="save_edits">Save Edits</string>
+    <string name="high_priority_tasks">All High Priority Tasks</string>
+    <string name="all_regular_tasks">All Regular Tasks</string>
+</resources>

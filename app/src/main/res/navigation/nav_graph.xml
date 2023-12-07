@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.todo.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_allTasksFragment"
+            app:destination="@id/allTasksFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTasksFragment"
+        android:name="com.example.todo.ui.tasks.AllTasksFragment"
+        android:label="fragment_all_tasks"
+        tools:layout="@layout/fragment_all_tasks" >
+        <action
+            android:id="@+id/action_allTasksFragment_to_EditTaskFragment"
+            app:destination="@id/EditTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/priorityFragment"
+        android:name="com.example.todo.ui.priority.PriorityFragment"
+        android:label="PriorityFragment"
+        tools:layout="@layout/fragment_priority">
+        <action
+            android:id="@+id/action_priorityFragment_to_EditTaskFragment"
+            app:destination="@id/EditTaskFragment" />
+        <action
+            android:id="@+id/action_priorityFragment_to_allTasksFragment"
+            app:destination="@id/allTasksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EditTaskFragment"
+        android:name="com.example.todo.ui.edittask.EditTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_edit_task" >
+        <argument
+            android:name="task"
+            app:argType="com.example.todo.database.TaskEntity" />
+        <action
+            android:id="@+id/action_EditTaskFragment_to_allTasksFragment"
+            app:destination="@id/allTasksFragment" />
+    </fragment>
+</navigation>

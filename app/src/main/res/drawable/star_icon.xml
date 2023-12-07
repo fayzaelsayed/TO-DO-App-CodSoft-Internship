@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/star_filled" />
+    <item android:drawable="@drawable/star_outline" />
+</selector>

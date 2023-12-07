@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/allTasksFragment"
+        android:icon="@drawable/all_tasks_icon"
+        android:title="@string/all_tasks"
+        app:cnb_backgroundColor="#33AB3131"
+        app:cnb_iconColor="#AB3131"/>
+
+    <item
+        android:id="@+id/blank"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/blank2"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/priorityFragment"
+        android:icon="@drawable/star_filled"
+        android:title="@string/high_priority"
+        app:cnb_backgroundColor="#40FF5B22"
+        app:cnb_iconColor="#FF5B22"
+       />
+
+</menu>

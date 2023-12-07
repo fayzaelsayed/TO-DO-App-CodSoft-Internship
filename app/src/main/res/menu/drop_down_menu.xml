@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all"
+        android:icon="@drawable/no_filter"
+        android:title="All List" />
+
+    <item
+        android:id="@+id/today"
+        android:icon="@drawable/today"
+        android:title="Today's Due Tasks" />
+
+
+    <item
+        android:id="@+id/todo"
+        android:icon="@drawable/todo_list"
+        android:title="ToDo List" />
+
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/done_list"
+        android:title="Done List" />
+</menu>
