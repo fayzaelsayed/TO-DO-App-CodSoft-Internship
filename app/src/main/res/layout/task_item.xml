@@ -2,9 +2,16 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <variable
+            name="task"
+            type="com.example.todo.database.TaskEntity" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -29,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:text="@string/task_title"
+                    android:text="@{task.taskTitle}"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_14ssp"
@@ -50,7 +57,7 @@
                     android:paddingEnd="@dimen/_5sdp"
                     android:paddingBottom="@dimen/_5sdp"
                     android:layout_marginStart="@dimen/_10sdp"
-                    android:text="@string/task_description"
+                    android:text="@{task.taskDescription}"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_12ssp"
@@ -75,7 +82,7 @@
                     android:paddingTop="@dimen/_5sdp"
                     android:paddingEnd="@dimen/_5sdp"
                     android:paddingBottom="@dimen/_5sdp"
-                    android:text="@string/the_date_of_the_task"
+                    android:text="@{task.taskDate}"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_12ssp"
@@ -99,7 +106,7 @@
                     android:paddingEnd="@dimen/_5sdp"
                     android:textAlignment="center"
                     android:paddingBottom="@dimen/_5sdp"
-                    android:text="@string/the_time_of_the_task"
+                    android:text="@{task.taskTime}"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_12ssp"
                     app:layout_constraintEnd_toEndOf="parent"

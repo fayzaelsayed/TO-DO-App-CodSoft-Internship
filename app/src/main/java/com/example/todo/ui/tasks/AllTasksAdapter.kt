@@ -25,6 +25,7 @@ class AllTasksAdapter :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(taskEntity: TaskEntity) {
             binding.apply {
+                task = taskEntity
                 when (taskEntity.taskType) {
                     "TODO" -> {
                         cbItemTask.isChecked = false
@@ -38,10 +39,6 @@ class AllTasksAdapter :
                 cbItemTask.setOnClickListener {
                     buttonClickListener.onButtonClick(Action.TaskType, taskEntity)
                 }
-                cbItemTask.text = taskEntity.taskTitle
-                tvItemTaskDescription.text = taskEntity.taskDescription
-                tvItemDateTask.text = taskEntity.taskDate
-                tvItemTimeTask.text = taskEntity.taskTime
                 when (taskEntity.taskPriority) {
                     "REGULAR" -> {
                         ibItemHighPriority.setImageResource(R.drawable.star_outline)
