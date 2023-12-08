@@ -9,5 +9,5 @@ The user can filter the displayed list of tasks according to today's due tasks a
 - Room database
 - Coroutines
 - Navigation component 
-- Data binding
+- View binding
 - Lottie animations
