@@ -33,8 +33,8 @@
 
                 <CheckBox
                     android:id="@+id/cb_item_task"
-                    android:layout_width="243dp"
-                    android:layout_height="61dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="@{task.taskTitle}"
@@ -49,7 +49,7 @@
 
                 <TextView
                     android:id="@+id/tv_item_task_description"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/task_description"
                     android:drawablePadding="@dimen/_5sdp"
